@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: #efefef;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: #1876f2;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    width: 35px;
+    margin-right: 45px;
+}
+.nev-left, .nev-right{
+    display: flex;
+    align-items: center;
+}
+.nev-left ul li{
+    list-style: none;
+    display: inline-block;
+}
+.nev-left ul li img{
+    width: 20px;
+    margin: 0 15px;
+}
+.nav-user-icon img{
+    width: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.nav-user-icon{
+    margin-left: 20px;
+}
+.search-box{
+    background: #efefef;
+    width: 220px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+}
+.search-box img{
+    width: 18px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    border: 0;
+}
+.online{
+    position: relative;  
+}
+.online::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border: 2px solid#fff;
+    border-radius: 50px;
+    background: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.left-sidebar{
+    /* background: #cbdffa; */
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    /* height: 100vh; */
+}
+.right-sidebar{
+    /* background: #cbdffa; */
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    /* height: 100vh; */
+}
+.main-content{
+    flex-basis: 47px;
+    height: 100vh;
+}
+
+.imp-link a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+.imp-link a img{
+    width: 25px;
+    margin-right: 15px;
+}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="nev-left">
+            <img src="img/social.png" class="logo">
+            <ul>
+                <li><img src="img/notification.png" ></li>
+                <li><img src="img/inbox1.png" ></li>
+                <li><img src="img/photo.png" ></li>
+               
+            </ul>
+        </div>
+        <div class="nev-right">
+            <div class="search-box">
+                <img src="icon/96.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online">
+                <img src="img/allua.jpg" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!------------ left-sidebar------------------ -->
+        <div class="left-sidebar">
+            <div class="imp-link">
+                <a href="#"><img src="img/news.png">Latest News</a>
+                <a href="#"><img src="img/freinds.png">Friend</a>
+                <a href="#"><img src="img/group.png">Group</a>
+                <a href="#"><img src="img/mar1.png">markerplace</a>
+                <a href="#"><img src="img/watch.jpeg">watch</a>
+                <a href="#">See More</a>
+            </div>
+        </div>
+        <!------------ main-sidebar------------------ -->
+        <div class="main-content">
+
+        </div>
+        <!------------ right-sidebar------------------ -->
+        <div class="right-sidebar">
+
+        </div>
+    </div>
+</body>
+</html>
